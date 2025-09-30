@@ -1,0 +1,30 @@
+/* About section background matching Hero gradient */
+.about-section {
+  background: rgb(255, 255, 255); /* white background */
+  color: #000; /* black text for readability on white */
+  padding: 3rem 2rem;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Inner container to control width and alignment */
+.about-container {
+  max-width: 800px;
+  text-align: center; /* center align text */
+}
+
+/* Heading */
+.about-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Paragraph text */
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}

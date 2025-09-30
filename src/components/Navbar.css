@@ -1,0 +1,62 @@
+/* Navbar container */
+.navbar {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo container with circle */
+.logo-container {
+  position: absolute;   /* absolute position relative to page */
+  left: 0;
+  top: 50%;             /* vertically center */
+  transform: translateY(-50%); /* perfectly center vertically */
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 1rem;    /* optional small gap from edge */
+}
+
+/* Logo image */
+.logo-image {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;          /* keep aspect ratio */
+}
+
+/* Navbar links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #2563eb;
+  transform: scale(1.05);
+}

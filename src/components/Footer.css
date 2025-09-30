@@ -1,0 +1,17 @@
+.footer {
+  background-color: #1f2937; /* dark gray */
+  color: #ffffff;
+  text-align: center;         /* center text */
+  padding: 1.5rem 0;          /* top & bottom padding */
+  font-size: 1rem;
+  letter-spacing: 0.5px;      /* optional spacing between letters */
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1); /* subtle top shadow */
+}
+
+/* Optional: responsive font size */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+  }
+}

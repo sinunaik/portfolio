@@ -1,0 +1,59 @@
+/* Section styling */
+.contact-section {
+  padding: 3rem 2rem;
+  background-color: #ffffff; /* white background */
+  color: #111827; /* dark text */
+  text-align: center;
+  min-height: 40vh;
+}
+
+/* Section title */
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+/* Container for contact items */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Individual contact card */
+.contact-item {
+  flex: 1 1 200px;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #f3f4f6; /* light gray */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Headings inside contact item */
+.contact-item h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+.contact-item a {
+  color: #2563eb; /* blue */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #1d4ed8; /* darker blue on hover */
+}

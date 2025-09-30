@@ -1,0 +1,91 @@
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  min-height: 100vh; /* full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3b82f6 25%, #8b5cf6 75%); /* gradient background */
+  padding: 2rem;
+  position: relative;
+}
+
+/* Hero container with flex */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.1); /* optional semi-transparent overlay */
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+/* Left side: Image */
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%; /* circle image */
+  border: 4px solid #ffffff;
+}
+
+/* Right side: Greeting text */
+.hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.hero-greeting {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Button */
+.hero-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
+  color: #2563eb;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  background-color: #e0e7ff;
+}
+
+/* Responsive: stack image and text on small screens */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    margin-bottom: 2rem;
+  }
+}
