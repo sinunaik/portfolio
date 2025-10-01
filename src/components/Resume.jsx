@@ -4,7 +4,7 @@ function Resume() {
       {/* PDF Preview */}
       <div className="w-full max-w-4xl border border-gray-300 rounded-lg shadow-lg overflow-hidden mb-4">
         <iframe
-          src="/shrinivas.pdf"
+          src="/portfolio/shrinivas.pdf"
           title="Resume"
           width="100%"
           height="700px"

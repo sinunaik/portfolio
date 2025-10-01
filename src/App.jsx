@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// App.jsx
+import { Routes, Route } from "react-router-dom"; // remove BrowserRouter import
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -10,7 +11,7 @@ import Resume from "./components/Resume";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         {/* Main single-page portfolio */}
@@ -30,7 +31,7 @@ function App() {
         {/* Resume separate page */}
         <Route path="/resume" element={<Resume />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 

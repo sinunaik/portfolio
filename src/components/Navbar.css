@@ -20,7 +20,7 @@
 
 /* Logo container with circle */
 .logo-container {
-  position: absolute;   /* absolute position relative to page */
+  position: relative;   /* absolute position relative to page */
   left: 0;
   top: 50%;             /* vertically center */
   transform: translateY(-50%); /* perfectly center vertically */
