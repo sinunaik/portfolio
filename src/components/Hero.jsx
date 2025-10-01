@@ -1,6 +1,7 @@
 import "./Hero.css";
 import HeroImage from "../assets/my.jpg";
-import ReactTyped from "react-typed";
+import { ReactTyped } from "react-typed"; 
+
 
 function Hero() {
   return (
