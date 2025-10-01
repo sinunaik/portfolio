@@ -1,7 +1,7 @@
 /* Navbar container */
 .navbar {
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
@@ -48,15 +48,16 @@
   display: flex;
   gap: 2rem;
 }
-
-.nav-links li a {
+.nav-links li a,
+.nav-links li .nav-links-link {
   text-decoration: none;
-  color: #374151;
+  color: black !important; 
   font-weight: 500;
   transition: color 0.3s, transform 0.2s;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover,
+.nav-links li .nav-links-link:hover {
   color: #2563eb;
   transform: scale(1.05);
 }

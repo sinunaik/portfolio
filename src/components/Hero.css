@@ -1,91 +1,55 @@
-/* Hero Section */
 .hero-section {
-  width: 100%;
-  min-height: 100vh; /* full screen */
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  padding: 6rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #3b82f6 25%, #8b5cf6 75%); /* gradient background */
-  padding: 2rem;
-  position: relative;
 }
 
-/* Hero container with flex */
 .hero-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  width: 100%;
-  gap: 2rem;
-  background: rgba(255, 255, 255, 0.1); /* optional semi-transparent overlay */
-  padding: 2rem;
-  border-radius: 1rem;
-  backdrop-filter: blur(10px);
-}
-
-/* Left side: Image */
-.hero-left {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  gap: 3rem;
   align-items: center;
 }
 
-.hero-image {
+.hero-left img {
   width: 250px;
   height: 250px;
+  border-radius: 50%;
   object-fit: cover;
-  border-radius: 50%; /* circle image */
-  border: 4px solid #ffffff;
-}
-
-/* Right side: Greeting text */
-.hero-right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero-greeting {
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-name {
+  font-size: 2.5rem;
   font-weight: bold;
+  color: #ff9800;
   margin-bottom: 1rem;
 }
 
 .hero-text {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
-/* Button */
 .hero-btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #ffffff;
-  color: #2563eb;
-  font-weight: 600;
-  border-radius: 0.5rem;
+  background: #ff9800;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
   text-decoration: none;
-  transition: transform 0.3s, background-color 0.3s;
+  transition: 0.3s;
 }
 
 .hero-btn:hover {
-  transform: scale(1.05);
-  background-color: #e0e7ff;
-}
-
-/* Responsive: stack image and text on small screens */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-left {
-    margin-bottom: 2rem;
-  }
+  background: #e68900;
 }
