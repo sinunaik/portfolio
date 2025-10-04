@@ -4,9 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/',     // this is your site’s base path on Netlify
-//   build: {
-//     outDir: 'build',       //  change output folder from dist → build
-//   },
-// })
-
+  base: '/portfolio/' // this is your site’s base path on Vercel
+})
